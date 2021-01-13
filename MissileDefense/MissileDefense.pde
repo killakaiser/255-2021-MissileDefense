@@ -1,11 +1,32 @@
 
+Player thePlayer;
 
+// THIS FUNCTION IS CALLED EXACLY ONCE:
 void setup(){
-  size(700, 800);
+  size(700, 800); // SETS SIZE OF WINDOW
 
+
+thePlayer = new Player();
 }
 
+
+// THIS FUNCTION IS CALLED EVERY 1/60TH OF A SECOND 
+// WE WILL USE IT TO CREATE THE "GAME LOOP" DESIGN PATTERN
+// EACH TIME THIS FUNCTION IS CALLED, WE CAN THINK OF IT AS A "TICK"
 void draw(){
   
+// === CALC TIME ===
+// CALCULATE HOW MUCH TIME HAS PASSED SINCE THE PREVIOUS TICK.
+
+// === PROCESS INPUT ===
+// GET ALL INPUT FROM DEVICES
+
+// === UPDATE ===
+// UPDATE ALL GAME OBJECTS
+
+// === DRAW ===
+// RENDER ALL GAME OBJECTS
+background(0);
+ellipse(mouseX, mouseY, 50, 50);
 
 }
